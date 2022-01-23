@@ -32,7 +32,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!--TestNG suite xml files-->
-                        <suiteXmlFile>${xmlFile}</suiteXmlFile>
+                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
