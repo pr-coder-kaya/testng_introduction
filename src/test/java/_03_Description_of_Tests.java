@@ -1,7 +1,6 @@
 import org.testng.annotations.Test;
 
 public class _03_Description_of_Tests {
-
     /*
     "description" keyword is used to give a test some description to show in results when executed
 

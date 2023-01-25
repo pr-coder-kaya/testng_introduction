@@ -32,5 +32,4 @@ public class _05_SoftAssert_vs_HardAssert {
         System.out.println("Hello World");
         softAssert.assertAll();
     }
-
 }

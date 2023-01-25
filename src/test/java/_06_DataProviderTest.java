@@ -52,7 +52,6 @@ public class _06_DataProviderTest {
         };
     }
 
-
     @DataProvider(name = "search")
     public Object[] search() {
         return new Object[]{"Apple", "Tesla", "Microsoft"};

@@ -1,7 +1,6 @@
 import org.testng.annotations.Test;
 
 public class _01_TestAnnotations {
-
     /*
     @Test annotation marks a method as part of the test.
     -We can have multiple tests created in same class
