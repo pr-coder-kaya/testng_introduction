@@ -1,12 +1,14 @@
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
 
-public class DataProviderTest {
+public class _06_DataProviderTest {
 
     @Test(dataProvider = "loginCredentials")
-    public void signIn(String username, String password){
+    public void signIn(String username, String password, String message){
+        System.out.println("\n--------------------------\n");
         System.out.println("Username = " + username);
         System.out.println("Password = " + password);
+        System.out.println("Message = " + message);
     }
 
     @Test(dataProvider = "search")
@@ -16,17 +18,12 @@ public class DataProviderTest {
 
     @DataProvider
     public Object[] loginCredentials(){
-        Object[][] credentials = new Object[4][2];
-        credentials[0][0] = "user1";
-        credentials[0][1] = "password1";
-        credentials[1][0] = "user2";
-        credentials[1][1] = "password2";
-        credentials[2][0] = "user3";
-        credentials[2][1] = "password3";
-        credentials[3][0] = "user4";
-        credentials[3][1] = "password4";
-
-        return credentials;
+        return new Object[][]{
+                {"", "", "Invalid Username entered!"},
+                {"john", "Test1234", "Invalid Username entered!"},
+                {"john", "abcd", "Invalid Username entered!"},
+                {"TechGlobal", "abcd", "Invalid Password entered!"}
+        };
     }
 
 
